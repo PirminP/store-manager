@@ -5,6 +5,7 @@ require('dotenv').config();
 require('express-async-errors');
 
 const productController = require('./controllers/productController');
+const salesController = require('./controllers/salesController');
 
 app.use(express.json());
 
@@ -13,6 +14,7 @@ app.get('/products', productController.getAllProducts);
 app.post('/products', productController.createProduct);
 app.put('/products/:id', productController.updateProduct);
 app.delete('/products/:id', productController.deleteProduct);
+app.post('/sales', salesController.createSales);
 
 // não altere esse arquivo, essa estrutura é necessária para à avaliação do projeto
 
