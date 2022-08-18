@@ -45,4 +45,20 @@ async function updateProduct({ id, name }) {
   return { data: alteredProduct, code: 200 };
 }
 
-module.exports = { getAllProducts, getProductById, createProduct, updateProduct };
+async function deleteProduct(id) {
+  const idProductCheck = await productModel.getProductById(id);
+  if (!idProductCheck) {
+    return { error: { message: 'Product not found' }, code: 404 };
+  }
+
+  await productModel.deleteProduct(id);
+  return { code: 204 };
+}
+
+module.exports = {
+  getAllProducts,
+  getProductById,
+  createProduct,
+  updateProduct,
+  deleteProduct,
+};

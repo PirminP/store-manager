@@ -24,4 +24,15 @@ async function updateProduct({ id, name }) {
   return { id, name };
 }
 
-module.exports = { getAllProducts, getProductById, createProduct, updateProduct };
+async function deleteProduct(id) {
+  await connection
+    .execute('DELETE FROM StoreManager.products WHERE id = ?', [id]);
+}
+
+module.exports = {
+  getAllProducts,
+  getProductById,
+  createProduct,
+  updateProduct,
+  deleteProduct,
+};
