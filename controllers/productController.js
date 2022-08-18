@@ -14,10 +14,15 @@ async function getProductById(req, res) {
 }
 
 async function createProduct(req, res) {
-  // const { name } = req.body;
-  const { data, error, code } = await productService.createProduct(req.body);
+  const { data, error, code } = await productService.createProduct({ ...req.body });
   if (error) return res.status(code).json(error);
   return res.status(code).json(data);
 }
 
-module.exports = { getAllProducts, getProductById, createProduct };
+async function updateProduct(req, res) {
+  const { data, error, code } = await productService.updateProduct({ ...req.params, ...req.body });
+  if (error) return res.status(code).json(error);
+  return res.status(code).json(data);
+}
+
+module.exports = { getAllProducts, getProductById, createProduct, updateProduct };

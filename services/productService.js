@@ -28,4 +28,21 @@ async function createProduct({ name }) {
   return { data: insertProduct, code: 201 };
 }
 
-module.exports = { getAllProducts, getProductById, createProduct };
+async function updateProduct({ id, name }) {
+  if (!name) {
+    return { error: { message: '"name" is required' }, code: 400 };
+  }
+  if (name.length < 5) {
+    return { error: { message: '"name" length must be at least 5 characters long' }, code: 422 };
+  }
+
+  const idProductCheck = await productModel.getProductById(id);
+  if (!idProductCheck) {
+    return { error: { message: 'Product not found' }, code: 404 };
+  }
+
+  const alteredProduct = await productModel.updateProduct({ id, name });
+  return { data: alteredProduct, code: 200 };
+}
+
+module.exports = { getAllProducts, getProductById, createProduct, updateProduct };

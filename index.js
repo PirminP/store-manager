@@ -11,6 +11,7 @@ app.use(express.json());
 app.get('/products/:id', productController.getProductById);
 app.get('/products', productController.getAllProducts);
 app.post('/products', productController.createProduct);
+app.put('/products/:id', productController.updateProduct);
 
 // não altere esse arquivo, essa estrutura é necessária para à avaliação do projeto
 
