@@ -27,6 +27,7 @@ async function updateProduct({ id, name }) {
 async function deleteProduct(id) {
   await connection
     .execute('DELETE FROM StoreManager.products WHERE id = ?', [id]);
+  return id;
 }
 
 module.exports = {
