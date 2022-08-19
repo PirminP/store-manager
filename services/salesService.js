@@ -26,4 +26,24 @@ async function createSales(sales) {
   return { data: { id: saleId, itemsSold: sales }, code: 201 };
 }
 
-module.exports = { createSales };
+async function getAllSales() {
+  const allSales = await salesModel.getAllSales();
+  if (!allSales || allSales.length === 0) {
+    return { error: { message: 'Sale not found' }, code: 404 };
+  }
+  return { data: allSales, code: 200 };
+}
+
+async function getSalebyId(id) {
+  const idSale = await salesModel.getSalebyId(id);
+  if (!idSale || idSale.length === 0) {
+    return { error: { message: 'Sale not found' }, code: 404 };
+  }
+  return { data: idSale, code: 200 };
+}
+
+module.exports = {
+  createSales,
+  getAllSales,
+  getSalebyId,
+};
