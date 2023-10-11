@@ -34,7 +34,7 @@ Use the following command to run the application:
   | ----------- | ----------- | ----------- |
   | `GET`   | Returns list of all products | http://localhost:3000/products |
   | `GET`   | Returns specific product | http://localhost:3000/:id |
-  | `..`   |  | http://localhost:3000/ |
+  | `PUT`   | Change name of specific product | http://localhost:3000/products/:id |
   | `POST`   | Create new product | http://localhost:3000/products |
   | `..`   |  | http://localhost:3000/ |
 
