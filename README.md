@@ -32,17 +32,16 @@ Use the following command to run the application:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `GET`   | Returns a list of all products | http://localhost:3000/products |
-  | `GET`   | Returns a specific product | http://localhost:3000/:id |
+  | `GET`   | Returns list of all products | http://localhost:3000/products |
+  | `GET`   | Returns specific product | http://localhost:3000/:id |
   | `..`   |  | http://localhost:3000/ |
-  | `PUT`   |  | http://localhost:3000/ |
-  | `POST`   |  | http://localhost:3000/ |
-  | `DELETE`   |  | http://localhost:3000/ |
+  | `POST`   | Create new product | http://localhost:3000/products |
+  | `..`   |  | http://localhost:3000/ |
 
 The following JSON is to be entered in the request PUT & POST:
   ```
   { 
-    "name": "Produto ABC"
+    "name": "Produto_X"
   }
   ```
 
