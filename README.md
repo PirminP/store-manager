@@ -28,29 +28,45 @@ Use the following command to run the application:
   ```
 
 ### Endpoints
-#### Login
+#### Products
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `POST`   |   | http://localhost:3000/login |
-
-The following JSON is to be entered in the request:
-  ```
-
-  ```
-
-#### Talker
-
-  | Method     | Functionality | URL |
-  | ----------- | ----------- | ----------- |
-  | `GET`   |  | http://localhost:3000/talker |
-  | `GET`   |  | http://localhost:3000/talker/:id |
-  | `GET`   |  | http://localhost:3000/talker/search |
-  | `PUT`   |  | http://localhost:3000/talker/:id |
-  | `POST`   |  | http://localhost:3000/talker |
-  | `DELETE`   |  | http://localhost:3000/talker/:id |
+  | `POST`   |   | http://localhost:3000/ |
+  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   |  | http://localhost:3000/ |
+  | `PUT`   |  | http://localhost:3000/ |
+  | `POST`   |  | http://localhost:3000/ |
+  | `DELETE`   |  | http://localhost:3000/ |
 
 The following JSON is to be entered in the request PUT & POST:
   ```
+  { 
+    "name": "Produto ABC"
+  }
+  ```
 
+#### Sales
+
+  | Method     | Functionality | URL |
+  | ----------- | ----------- | ----------- |
+  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   |  | http://localhost:3000/ |
+  | `PUT`   |  | http://localhost:3000/ |
+  | `POST`   |  | http://localhost:3000/ |
+  | `DELETE`   |  | http://localhost:3000/ |
+
+In PUT and POST request, enter quantity and id of product in following format:
+  ```
+  [
+    {
+      "productId": 1,
+      "quantity": 2
+    }, 
+    { 
+      "productId": 8,
+      "quantity": 28
+    }
+  ]
   ```
