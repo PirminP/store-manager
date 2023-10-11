@@ -14,14 +14,16 @@
   
   ```
   docker-compose up -d // start application with docker
-  docker attach talker_manager
+  docker attach store_manager
   npm install // install dependencies
   docker-compose down // stop application
   ```
 
 Use the following command to run the application:
   ```
-  npm start or npm run dev
+  npm start or npm run debug // start application
+  npm run test:mocha // execute tests of application
+
   ```
 
 ### Endpoints
