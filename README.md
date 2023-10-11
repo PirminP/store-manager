@@ -10,8 +10,9 @@
 * Applied Software Architecture: Model, Service & Controller layers
 
 ### Instructions
-* To run the repository locally, clone the project and use the following commands to initialize Docker:
-  
+* `Note`: create and populate database using schema present in `migration.sql` and `seed.sql` files.
+* To run the repository locally, clone the project and use the following commands to initialize Docker: 
+
   ```
   docker-compose up -d // start application with docker
   docker attach store_manager
