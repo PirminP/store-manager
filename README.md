@@ -32,9 +32,9 @@ Use the following command to run the application:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `POST`   |   | http://localhost:3000/ |
-  | `GET`   |  | http://localhost:3000/ |
-  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   | Returns a list of all products | http://localhost:3000/products |
+  | `GET`   | Returns a specific product | http://localhost:3000/:id |
+  | `..`   |  | http://localhost:3000/ |
   | `PUT`   |  | http://localhost:3000/ |
   | `POST`   |  | http://localhost:3000/ |
   | `DELETE`   |  | http://localhost:3000/ |
