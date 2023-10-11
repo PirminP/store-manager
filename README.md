@@ -2,10 +2,12 @@
 
 # Project Store Manager
 
-#### ...
+#### This project consists of an API built for managing a product e-commerce, with the possibility of creating, viewing, deleting and updating products and sales.
 
-* Developed 
-* Application
+* Developed by using Node.js, Express, MySQL and Docker
+* Using REST practices
+* Tests performed with Mocha, Chai and Sinon
+* Applied Software Architecture: Model, Service & Controller layers
 
 ### Instructions
 * To run the repository locally, clone the project and use the following commands to initialize Docker:
