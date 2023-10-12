@@ -1,5 +1,3 @@
-# :construction: README em construção ! :construction:
-
 # Project Store Manager
 
 #### This project consists of an API built for managing a product e-commerce, with the possibility of creating, viewing, deleting and updating products and sales.
@@ -51,12 +49,9 @@ The following JSON is to be entered in the request PUT & POST:
   | ----------- | ----------- | ----------- |
   | `GET`   | Returns list of all sales | http://localhost:3000/sales |
   | `GET`   | Returns specific sale | http://localhost:3000/sales/:id |
-  | `...`   |  | http://localhost:3000/ |
-  | `PUT`   |  | http://localhost:3000/ |
-  | `POST`   |  | http://localhost:3000/ |
-  | `DELETE`   |  | http://localhost:3000/ |
+  | `POST`   | Validate and create new sale | http://localhost:3000/sales |
 
-In PUT and POST request, enter quantity and id of product in following format:
+In POST request, enter quantity and id of product in following format:
   ```
   [
     {
