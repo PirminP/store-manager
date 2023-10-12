@@ -49,9 +49,9 @@ The following JSON is to be entered in the request PUT & POST:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `GET`   |  | http://localhost:3000/ |
-  | `GET`   |  | http://localhost:3000/ |
-  | `GET`   |  | http://localhost:3000/ |
+  | `GET`   | Returns list of all sales | http://localhost:3000/sales |
+  | `GET`   | Returns specific sale | http://localhost:3000/sales/:id |
+  | `...`   |  | http://localhost:3000/ |
   | `PUT`   |  | http://localhost:3000/ |
   | `POST`   |  | http://localhost:3000/ |
   | `DELETE`   |  | http://localhost:3000/ |
