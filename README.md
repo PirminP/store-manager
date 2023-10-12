@@ -56,11 +56,11 @@ In POST request, enter quantity and id of product in following format:
   [
     {
       "productId": 1,
-      "quantity": 2
+      "quantity": 5
     }, 
     { 
-      "productId": 8,
-      "quantity": 28
+      "productId": 2,
+      "quantity": 22
     }
   ]
   ```
