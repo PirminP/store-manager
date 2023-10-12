@@ -36,7 +36,7 @@ Use the following command to run the application:
   | `GET`   | Returns specific product | http://localhost:3000/:id |
   | `PUT`   | Change name of specific product | http://localhost:3000/products/:id |
   | `POST`   | Create new product | http://localhost:3000/products |
-  | `..`   |  | http://localhost:3000/ |
+  | `DELETE`   | Delete specific product | http://localhost:3000/products/:id |
 
 The following JSON is to be entered in the request PUT & POST:
   ```
